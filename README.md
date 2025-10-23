@@ -159,9 +159,8 @@ INI-style format.
 
 ### Sample Configuration
 
-ini
-
-\# This is a configuration file for OmniGS-R pipeline.
+```
+# This is a configuration file for OmniGS-R pipeline.
 
 \[Tools\]
 
@@ -223,52 +222,35 @@ test_marker_file=/path/to/test_markers.vcf
 
 training_pheno_file=/path/to/training_pheno.txt
 
-\# test phenotypic data file (optional, for PREDICTION mode only)
-
+# test phenotypic data file (optional, for PREDICTION mode only)
 test_pheno_file=/path/to/test_pheno.txt
 
-\[Models\]
+[Models]
 
-\# Choose GS modeling methods: True \| False
-
-\# Parametric/linear models
-
+# Choose GS modeling methods: True \| False
+# Parametric/linear models
 RR-BLUP = True
-
 GBLUP = True
-
 BRR = True
-
 BL = True
-
 BayesA = True
-
 BayesB = True
-
 BayesC = True
 
-\# Non-parametric machine learning methods
-
+# Non-parametric machine learning methods
 RFR = True
-
 SVR = True
-
 RKHS = True
 
-\# Classifiers
-
+# Classifiers
 RFC = True
-
 SVC = True
 
-\[Hyperparameters\]
-
-\# Model parameters for Bayesian methods
-
+[Hyperparameters]
+# Model parameters for Bayesian methods
 nIter = 12000
-
 burnIn = 2000
-
+```
 ### 
 
 ### Parameter Details
