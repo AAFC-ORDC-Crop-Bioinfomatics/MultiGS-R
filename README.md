@@ -348,9 +348,8 @@ result_folder/
 
 If you use OmniGS-R in your research, please cite:
 
-> **OmniGS-R: A Comprehensive Genomic Selection Pipeline Using R
-> Packages.** \[Frank You/AAFC-AAC]. Version 1.0. \[[URL to GitHub
-> repository\](https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R)].
+ **OmniGS-R: A Comprehensive Genomic Selection Pipeline Using R
+ Packages.** [Frank You/AAFC-AAC]. Version 1.0. (https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R)].
 
 ## License
 
