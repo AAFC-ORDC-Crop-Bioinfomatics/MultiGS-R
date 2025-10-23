@@ -102,13 +102,10 @@ r
 ```
 ```r
 # Install required packages from CRAN
-
-install.packages(c("rrBLUP", "BGLR", "randomForest", "e1071",
-"ade4", "sommer", "ggplot2", "G2P"))
+install.packages(c("rrBLUP", "BGLR", "randomForest", "e1071","ade4", "sommer", "ggplot2", "G2P"))
 ```
 If G2P is not available on CRAN, please download from GitHub and follow
 installation instruction:
-
 <https://github.com/cma2015/G2P>
 
 ### 
@@ -116,15 +113,16 @@ installation instruction:
 ### Installing rtm-gwas-snpldb tool
 
 The rtm-gwas-snpldb tool for haplotype block identification can be
-downloaded from:
+downloaded from: <https://github.com/njau-sri/rtm-gwas>
 
-<https://github.com/njau-sri/rtm-gwas>
+For convenience, the executable Linux version of rtm-gwas-snpldb is already included in the pipeline folder.
 
-### Obtaining OmniGS-R
+### Obtaining OmniGS-R and its dependencies
 
-Download the latest release JAR file (e.g., gspipeline.jar) from the
-[Releases page](https://github.com/YourUsername/OmniGS-R/releases) of
-this repository.
+Download the latest release of the OmniGS-R repository from https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R.
+All required tools and dependencies are included in the pipeline folder of the repository.
+
+`git clone https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R`
 
 ## Quick Start
 
