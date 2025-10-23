@@ -254,38 +254,27 @@ burnIn = 2000
 
 ### Genotypic Data (Markers)
 
--   **Format:** VCF (Variant Call Format) - can be compressed (.vcf.gz)
-    > or uncompressed
-
+-   **Format:** VCF (Variant Call Format) - can be compressed (.vcf.gz) or uncompressed
 -   **Requirements:**
-
-    -   For **Cross-Validation:** One VCF file for the training
-        > population
-
+    -   For **Cross-Validation:** One VCF file for the training population
     -   For **Prediction:** Two VCF files (training and test)
 
 ### Phenotypic Data
 
 -   **Format:** Tab-delimited text file **with a header row**
-
 -   **Structure:**
-
     -   First column: Individual/Sample IDs
-
     -   Subsequent columns: Phenotypic values for different traits
 
 **Example** training_pheno.txt**:**
 
-text
+```text
 
 SampleID Yield Height Weight
-
 sample_1 5.6 112 45
-
 sample_2 4.8 105 42
-
 sample_3 NA 108 44
-
+```
 *Missing values should be coded as* NA*. The pipeline will handle them
 automatically.*
 
@@ -295,18 +284,19 @@ automatically.*
 
 2.  **Run the pipeline:**
 
-    bash
-
+   ``` bash
 java -jar gspipeline.jar /path/to/your/config.txt
+```
 
-3.  **Monitor progress:** The pipeline will display progress in the
-    > console and write detailed logs to the output directory
+3.  **Monitor progress:**
+The pipeline will display progress in the console and write detailed logs to the output directory
 
 **For large datasets, you may need to increase memory allocation:**
 
-bash
+```bash
 
 java -Xmx8g -jar gspipeline.jar config.txt
+```
 
 ## Output
 
