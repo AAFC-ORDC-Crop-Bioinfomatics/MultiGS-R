@@ -126,17 +126,19 @@ All required tools and dependencies are included in the pipeline folder of the r
 
 ## Quick Start
 
-1.  **Prepare your data:** Have your VCF marker files and phenotypic
-    > data files ready.
+We have included an example folder containing all the necessary files to help you quickly test the program. This example allows you to verify that all required tools and libraries are installed correctly and also serves as a set of template files for running your own analyses.
+More details about the configuration file, input, and output will be provided in the following sections.
 
-2.  **Create a configuration file:** Copy the sample below and modify
-    > the paths to match your system and data.
+-  Clone the repository
+`git clone https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R`
+-  Navigate to the example folder
+`cd OmniGS-R/example`
+- odify the configuration file
+Open gs_parameters_example.config and update the `RScriptPath` field to point to your local Rscript executable.
+-  Run the example
+`./OmniGS-R_run_example.sh`
+If the correct version of Java and all required R libraries are installed, the program will execute success-fully and generate the example results.
 
-3.  **Run the pipeline:**
-
-    bash
-
-java -jar gspipeline.jar /path/to/your/config.txt
 
 ## 
 
