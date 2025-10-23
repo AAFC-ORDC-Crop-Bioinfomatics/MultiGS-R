@@ -65,8 +65,8 @@ of use for both small-scale studies and large breeding populations.
 ## Key Features
 
 -   **Flexible Analysis Modes:** Supports both **cross-validation** (for
-    > model evaluation) and independent **across-population prediction**
-    > (using a training set to predict a test set).
+    model evaluation) and independent **across-population prediction**
+     (using a training set to predict a test set).
 
 -   **Multiple Marker Views:**
 
