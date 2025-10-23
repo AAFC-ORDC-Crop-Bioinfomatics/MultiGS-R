@@ -161,72 +161,45 @@ INI-style format.
 
 ```
 # This is a configuration file for OmniGS-R pipeline.
-
-\[Tools\]
-
-\# installation folder (absolute path) of the GSPipeline
-
+[Tools]
+# installation folder (absolute path) of the GSPipeline
 pipeline_home = /home/user/OmniGS-R
-
-\# haplotype block identification tool (included with OmniGS-R)
-
+# haplotype block identification tool (included with OmniGS-R)
 rtm_gwas_snpldb_path = /home/user/OmniGS-R/rtm_gwas/rtm-gwas-snpldb
-
-\# R path
-
+# R path
 RScriptPath = /usr/bin/Rscript
 
-\[General\]
-
-\# variance explained for selection of number of principal components
-
+[General]
+# variance explained for selection of number of principal components
 pca_variance_explained = 0.95
-
-\# result output folder
-
+# result output folder
 result_folder = sample_results_CV
-
-\# Number of threads for parallel computation
-
+# Number of threads for parallel computation
 threads = 7
-
-\# number of replicates in CROSS-VALIDATION mode
-
+# number of replicates in CROSS-VALIDATION mode
 Replicates = 2
 
-\[GS_Mode\]
-
-\# Mode: CROSS-VALIDATION \| PREDICTION
-
+[GS_Mode]
+# Mode: CROSS-VALIDATION \| PREDICTION
 mode = CROSS-VALIDATION
 
-\[Feature_view\]
+[Feature_view]
+# Three marker types: raw SNPs (SNP), haplotypes (HAP) and principal
+components (PC)
+marker_type = PC
 
-\# Three marker types: raw SNPs (SNP), haplotypes (HAP) and principal
-components (PCA)
-
-marker_type = PCA
-
-\[Data\]
-
-\# (training) marker file (for cross_validation or Prediction)
-
+[Data]
+# (training) marker file (for cross_validation or Prediction)
 marker_file=/path/to/training_markers.vcf
-
-\# test marker file (required for PREDICTION mode, optional for
+# test marker file (required for PREDICTION mode, optional for
 CROSS-VALIDATION)
-
 test_marker_file=/path/to/test_markers.vcf
-
-\# training phenotypic data file for both modes
-
+# training phenotypic data file for both modes
 training_pheno_file=/path/to/training_pheno.txt
-
 # test phenotypic data file (optional, for PREDICTION mode only)
 test_pheno_file=/path/to/test_pheno.txt
 
 [Models]
-
 # Choose GS modeling methods: True \| False
 # Parametric/linear models
 RR-BLUP = True
