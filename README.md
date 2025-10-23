@@ -99,13 +99,13 @@ Before running OmniGS-R, you must install the required R packages. Start
 an R session and run the following commands:
 ```bash
 r
-
+```
 ```r
 \# Install required packages from CRAN
 
 install.packages(c(\"rrBLUP\", \"BGLR\", \"randomForest\", \"e1071\",
 \"ade4\", \"sommer\", \"ggplot2\", \"G2P\"))
-
+```
 If G2P is not available on CRAN, please download from GitHub and follow
 installation instruction:
 
