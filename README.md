@@ -73,28 +73,28 @@ of use for both small-scale studies and large breeding populations.
     -   **SNP:** Direct use of Single Nucleotide Polymorphisms.
 
     -   **HAP:** Conversion of SNPs into haplotype blocks using RTM-GWAS
-        > SNP-LD for potentially capturing epistatic effects.
+         SNP-LD for potentially capturing epistatic effects.
 
     -   **PCA:** Use of Principal Components as markers to reduce
-        > dimensionality and address multicollinearity.
+         dimensionality and address multicollinearity.
 
 -   **Comprehensive Data Preprocessing:** Includes sample alignment,
-    > genotype harmonization, and missing data imputation.
+     genotype harmonization, and missing data imputation.
 
 -   **Diverse GS Modeling Methods:** Integrates several state-of-the-art
-    > models via R packages:
+     models via R packages:
 
     -   **Bayesian Approaches:** BL (Bayesian LASSO), BRR (Bayesian
-        > Ridge Regression), BayesA, BayesB, BayesC via BGLR.
+         Ridge Regression), BayesA, BayesB, BayesC via BGLR.
 
     -   **Machine Learning:** Random Forest for Regression (RFR) and
-        > Classification (RFC), Support Vector Regression (SVR) and
-        > Classification (SVC).
+         Classification (RFC), Support Vector Regression (SVR) and
+         Classification (SVC).
 
     -   **Linear Models:** Ridge-Regression BLUP (RR-BLUP) via rrBLUP.
 
     -   **Kernel Methods:** Genomic BLUP (GBLUP) and Reproducing Kernel
-        > Hilbert Spaces (RKHS).
+         Hilbert Spaces (RKHS).
 
 ## System Requirements & Installation
 
