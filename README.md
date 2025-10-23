@@ -232,25 +232,25 @@ burnIn = 2000
  | Section              | Parameter               | Description                                       | Values                     |
  |----------------------|-------------------------|---------------------------------------------------|----------------------------|
  | **Tools**            | pipeline_home           | Absolute path to OmniGS-R installation directory  | File path                  |
-                        rtm_gwas_snpldb_path     Path to haplotype block identification tool        File path
-                        RScriptPath              Path to RScript executable                         File path
+ |                      | rtm_gwas_snpldb_path    | Path to haplotype block identification tool       | File path                  | 
+ |                      | RScriptPath             | Path to RScript executable                        | File path                  |
  |----------------------|-------------------------|---------------------------------------------------|----------------------------|
-  **General**           pca_variance_explained   Variance cutoff for PCA component selection        0.0-1.0 (e.g., 0.95)
-                        result_folder            Output directory for results                       Directory path
-                        threads                  Number of CPU threads for parallel processing      Integer
-                        Replicates               Number of CV replicates                            Integer
+ | **General**          | pca_variance_explained  | Variance cutoff for PCA component selection       | 0.0-1.0 (e.g., 0.95)       |
+ |                      | result_folder            Output directory for results                       Directory path
+ |                      | threads                  Number of CPU threads for parallel processing      Integer
+ |                      | Replicates               Number of CV replicates                            Integer
  |----------------------|-------------------------|---------------------------------------------------|----------------------------| 
-  **GS_Mode**           mode                     Analysis mode                                      CROSS-VALIDATION or PREDICTION
+ | **GS_Mode**          | mode                     Analysis mode                                      CROSS-VALIDATION or PREDICTION
  |----------------------|-------------------------|---------------------------------------------------|----------------------------|
-  **Feature_view**      marker_type              Type of markers to use                             SNP, HAP, or PCA
-  **Data**              marker_file              Training population VCF file                       File path
-                        test_marker_file         Test population VCF file (Prediction mode)         File path
-                        training_pheno_file      Training phenotype data                            File path
-                        test_pheno_file          Test phenotype data (optional)                     File path
-  **Models**            Various                  Enable/disable specific GS models                  True or False
-  **Hyperparameters**   nIter                    MCMC iterations for Bayesian models                Integer (e.g., 12000)
-                        burnIn                   MCMC burn-in period                                Integer (e.g., 2000)
-  --------------------- ------------------------ -------------------------------------------------- --------------------------------
+ | **Feature_view**     | marker_type              Type of markers to use                             SNP, HAP, or PCA
+ | **Data**             | marker_file              Training population VCF file                       File path
+ |                      | test_marker_file         Test population VCF file (Prediction mode)         File path
+ |                      | training_pheno_file      Training phenotype data                            File path
+ |                      | test_pheno_file          Test phenotype data (optional)                     File path
+ | **Models**           | Various                  Enable/disable specific GS models                  True or False
+ | **Hyperparameters**  | nIter                    MCMC iterations for Bayesian models                Integer (e.g., 12000)
+ |                      | burnIn                   MCMC burn-in period                                Integer (e.g., 2000)
+ | ---------------------|------------------------ -------------------------------------------------- --------------------------------
 
 ## 
 
