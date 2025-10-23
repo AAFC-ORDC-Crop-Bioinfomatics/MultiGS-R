@@ -12,6 +12,8 @@ The pipeline supports multiple genomic marker types (SNPs, Haplotypes,
 Principal Components), and a suite of GS modeling algorithms, making it
 a comprehensive tool for breeders and researchers.
 
+A tutorial for the pipeline is provided in the file <a href="OmniGS-R_v1.0_tutorial.pdf">OmniGS-R_v1.0_tutorial.pdf</a>
+
 ## Table of Contents
 
 1.  Introduction
