@@ -17,39 +17,22 @@ A tutorial for the pipeline is provided in the file <a href="OmniGS-R_v1.0_tutor
 ## Table of Contents
 
 1.  Introduction
-
 2.  Key Features
-
 3.  System Requirements & Installation
-
     -   Prerequisites
-
     -   Installing R Libraries
-
     -   Obtaining OmniGS-R
-
 4.  Quick Start
-
 5.  Configuration File
-
     -   Sample Configuration
-
     -   Parameter Details
-
 6.  Input Files
-
     -   Genotypic Data (Markers)
-
     -   Phenotypic Data
-
 7.  Usage
-
 8.  Output
-
 9.  Troubleshooting
-
 10. Citation
-
 11. License
 
 ## Introduction
@@ -100,12 +83,12 @@ of use for both small-scale studies and large breeding populations.
 
 ### Prerequisites
 
-1.  **Java Runtime Environment (JRE):** Version 17 or higher must be
-    > installed. You can check by running java -version in your
-    > terminal.
+1.  **Java Runtime Environment (JRE):** Version 21 or higher must be
+    installed. You can check by running `java -version` in your
+    terminal.
 
 2.  **R:** Version 3.5 or higher must be installed and accessible from
-    > the command line. Check with R \--version.
+     the command line. Check with R \--version.
 
 3.  **Rscript:** This executable (included with R) must be in your
     > system\'s PATH.
