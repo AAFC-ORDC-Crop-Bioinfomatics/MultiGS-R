@@ -88,18 +88,19 @@ of use for both small-scale studies and large breeding populations.
     terminal.
 
 2.  **R:** Version 3.5 or higher must be installed and accessible from
-     the command line. Check with R \--version.
+     the command line. Check with `R --version`.
 
 3.  **Rscript:** This executable (included with R) must be in your
-    > system\'s PATH.
+     system\'s PATH.
 
 ### Installing R Libraries
 
 Before running OmniGS-R, you must install the required R packages. Start
 an R session and run the following commands:
-
+```bash
 r
 
+```r
 \# Install required packages from CRAN
 
 install.packages(c(\"rrBLUP\", \"BGLR\", \"randomForest\", \"e1071\",
