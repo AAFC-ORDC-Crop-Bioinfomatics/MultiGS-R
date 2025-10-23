@@ -332,25 +332,25 @@ result_folder/
 
 ## Troubleshooting
 
--   **\"RScript not found\":** Verify the RScriptPath in your
-    > configuration file is correct
+-   **\"RScript not found\":**
+  Verify the RScriptPath in your configuration file is correct
 
--   **Missing R packages:** Check the log file for package errors and
-    > install missing packages in R
+-   **Missing R packages:**
+  Check the log file for package errors and install missing packages in R
 
--   **Memory errors:** Use -Xmx parameter to increase Java heap space
-    > (e.g., -Xmx8g for 8GB)
+-   **Memory errors:**
+  Use -Xmx parameter to increase Java heap space  e.g., -Xmx8g for 8GB)
 
--   **VCF file errors:** Ensure your VCF files are properly formatted
-    > and indexed
+-   **VCF file errors:**
+  Ensure your VCF files are properly formatted and indexed
 
 ## Citation
 
 If you use OmniGS-R in your research, please cite:
 
 > **OmniGS-R: A Comprehensive Genomic Selection Pipeline Using R
-> Packages.** \[Your Name/Institution\]. Version 1.0. \[URL to GitHub
-> repository\].
+> Packages.** \[Frank You/AAFC-AAC]. Version 1.0. \[[URL to GitHub
+> repository\](https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R)].
 
 ## License
 
