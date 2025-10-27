@@ -141,11 +141,12 @@ cd OmniGS-R/example
 ```
 
 - Modify the configuration file
-Open gs_parameters_example.config and update the `RScriptPath` field to point to your local Rscript executable.
+  
+Open gs_parameters_example_CV.config and update the `RScriptPath` field to point to your local Rscript executable.
 
 -  Run the example
 ```bash
-./OmniGS-R_run_example.sh
+./OmniGS-R_run_example_CV.sh
 ```
 If the correct version of Java and all required R libraries are installed, the program will execute success-fully and generate the example results.
 
