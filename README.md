@@ -119,10 +119,10 @@ For convenience, the executable Linux version of rtm-gwas-snpldb is already incl
 
 ### Obtaining OmniGS-R and its dependencies
 
-Download the latest release of the OmniGS-R repository from https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R.
+Download the latest release of the OmniGS-R repository from https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R.
 All required tools and dependencies are included in the pipeline folder of the repository.
 
-`git clone https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R`
+`git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R`
 
 ## Quick Start
 
@@ -132,7 +132,7 @@ More details about the configuration file, input, and output will be provided in
 
 -  Clone the repository
 ```bash
-git clone https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R
+git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R
 ```
 
 -  Navigate to the example folder
@@ -267,7 +267,7 @@ burnIn = 2000
     -   First column: Individual/Sample IDs
     -   Subsequent columns: Phenotypic values for different traits
 
-**Example** training_pheno.txt**:**
+**Example** training_pheno.txt
 
 ```text
 
@@ -276,7 +276,7 @@ sample_1 5.6 112 45
 sample_2 4.8 105 42
 sample_3 NA 108 44
 ```
-*Missing values should be coded as* NA*. The pipeline will handle them
+*Missing values should be coded as NA. The pipeline will handle them
 automatically.*
 
 ## Usage
@@ -350,7 +350,7 @@ result_folder/
 If you use OmniGS-R in your research, please cite:
 
  **OmniGS-R: A Comprehensive Genomic Selection Pipeline Using R
- Packages.** [Frank You/AAFC-AAC]. Version 1.0. (https://github.com/ORDC-Crop-Bioinformatics/OmniGS-R)].
+ Packages.** [Frank You/AAFC-AAC]. Version 1.0. (https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R).
 
 ## License
 
