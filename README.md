@@ -1,8 +1,8 @@
-# OmniGS-R (v1.0)
+# MultiGS-R (v1.0)
 
 ## Genomic Selection Pipeline Using R Packages
 
-**OmniGS-R** is a powerful, flexible, and user-friendly Java-based
+**MultiGS-R** is a powerful, flexible, and user-friendly Java-based
 pipeline designed for performing Genomic Selection (GS) analysis. It
 seamlessly integrates a wide array of popular R packages for statistical
 modeling, providing a unified platform for both cross-validation and
@@ -12,7 +12,7 @@ The pipeline supports multiple genomic marker types (SNPs, Haplotypes,
 Principal Components), and a suite of GS modeling algorithms, making it
 a comprehensive tool for breeders and researchers.
 
-A tutorial for the pipeline is provided in the file <a href="OmniGS-R_v1.0_tutorial.pdf">OmniGS-R_v1.0_tutorial.pdf</a>
+A tutorial for the pipeline is provided in the file <a href="MultiGS-R_v1.0_tutorial.pdf">MultiGS-R_v1.0_tutorial.pdf</a>
 
 ## Table of Contents
 
@@ -122,7 +122,7 @@ For convenience, the executable Linux version of rtm-gwas-snpldb is already incl
 Download the latest release of the OmniGS-R repository from https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R.
 All required tools and dependencies are included in the pipeline folder of the repository.
 
-`git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R`
+`git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R`
 
 ## Quick Start
 
@@ -132,12 +132,12 @@ More details about the configuration file, input, and output will be provided in
 
 -  Clone the repository
 ```bash
-git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R
+git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R
 ```
 
 -  Navigate to the example folder
 ```bash
-cd OmniGS-R/example
+cd MultiGS-R/example
 ```
 
 - Modify the configuration file
@@ -146,7 +146,7 @@ Open gs_parameters_example_CV.config and update the `RScriptPath` field to point
 
 -  Run the example
 ```bash
-./OmniGS-R_run_example_CV.sh
+./MultiGS-R_run_example_CV.sh
 ```
 If the correct version of Java and all required R libraries are installed, the program will execute success-fully and generate the example results.
 
@@ -164,8 +164,8 @@ INI-style format.
 # This is a configuration file for OmniGS-R pipeline.
 [Tools]
 # installation folder (absolute path) of the GSPipeline
-pipeline_home = /home/user/OmniGS-R
-# haplotype block identification tool (included with OmniGS-R)
+pipeline_home = /home/user/MultiGS-R
+# haplotype block identification tool (included with MultiGS-R)
 rtm_gwas_snpldb_path = /home/user/OmniGS-R/rtm_gwas/rtm-gwas-snpldb
 # R path
 RScriptPath = /usr/bin/Rscript
@@ -350,7 +350,7 @@ result_folder/
 If you use OmniGS-R in your research, please cite:
 
  **OmniGS-R: A Comprehensive Genomic Selection Pipeline Using R
- Packages.** [Frank You/AAFC-AAC]. Version 1.0. (https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R).
+ Packages.** [Frank You/AAFC-AAC]. Version 1.0. (https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R).
 
 ## License
 
