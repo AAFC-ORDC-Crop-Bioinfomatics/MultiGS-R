@@ -1,6 +1,6 @@
 # MultiGS-R (v1.0)
 
-## Genomic Selection Pipeline Using R Packages
+## Genomic Selection Pipeline for Multiple single-traits Using Multiple models and Marker types with R Packages
 
 **MultiGS-R** is a powerful, flexible, and user-friendly Java-based
 pipeline designed for performing Genomic Selection (GS) analysis. It
