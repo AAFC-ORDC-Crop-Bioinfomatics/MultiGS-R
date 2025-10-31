@@ -12,7 +12,7 @@ The pipeline supports multiple genomic marker types (SNPs, Haplotypes,
 Principal Components), and a suite of GS modeling algorithms, making it
 a comprehensive tool for breeders and researchers.
 
-A tutorial for the pipeline is provided in the file <a href="MultiGS-R_v1.0_tutorial.pdf">MultiGS-R_v1.0_tutorial.pdf</a>
+A tutorial for the pipeline is provided in the file <a href="doc/MultiGS-R_v1.0_tutorial.pdf">MultiGS-R_v1.0_tutorial.pdf</a>
 
 ## Table of Contents
 
