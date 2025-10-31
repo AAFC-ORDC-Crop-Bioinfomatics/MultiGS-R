@@ -303,34 +303,21 @@ java -Xmx8g -jar gspipeline.jar config.txt
 
 The pipeline generates a well-organized directory structure:
 
-text
-
+```bash
 result_folder/
-
 ├── gs\_\<timestamp\>.log \# Detailed log file
-
 ├── all_CV_results.txt \# Detailed CV results (CV mode)
-
 ├── CV_summary_statistics.csv \# Summary statistics (CV mode)
-
 ├── prediction_detailed_results.txt \# Model results (Prediction mode)
-
 │
-
 ├── trait_predictions/ \# Predicted values for test set
-
 │ └── \<Trait\>\_\<Model\>\_prediction_data.txt
-
 ├── plots/ \# Diagnostic plots
-
 │ ├── MDS_plot.png \# Population structure
-
 │ └── \... \# Other visualizations
-
 ├── intermediate_data/ \# Processed intermediate files
-
 └── pheno_data/ \# Preprocessed phenotypic data
-
+```
 ## Troubleshooting
 
 -   **\"RScript not found\":**
