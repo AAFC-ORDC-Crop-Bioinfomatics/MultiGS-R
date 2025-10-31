@@ -1,4 +1,4 @@
 java -version
 R --version
 
-java -Xmx2000g -jar ../pipeline/OmniGS-R/OmniGS-R.jar  gs_parameters_example_prediction1.config
+java -Xmx20g -jar ../pipeline/MultiGS-R-1.0.jar  MultiGS-R_config_prediction1.ini
