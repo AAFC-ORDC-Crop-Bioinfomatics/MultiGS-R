@@ -1,18 +1,12 @@
 # MultiGS-R (v1.0)
 
-## Genomic Selection Pipeline for Multiple single-traits Using Multiple models and Marker types with R Packages
+## Java Pipeline for Genomic Selection of Multiple Single Traits Using R-Based Models and Diverse Marker Types
 
-**MultiGS-R** is a powerful, flexible, and user-friendly Java-based
-pipeline designed for performing Genomic Selection (GS) analysis. It
-seamlessly integrates a wide array of popular R packages for statistical
-modeling, providing a unified platform for both cross-validation and
-prediction tasks in plant and animal breeding programs.
+**MultiGS-R** is a powerful, flexible, and user-friendly Java-based pipeline for performing genomic selection (GS) analysis. It seamlessly integrates a wide range of popular R packages implementing both classical statistical and modern machine learning models, providing a unified platform for cross-validation and across-population prediction in plant and animal breeding programs.
 
-The pipeline supports multiple genomic marker types (SNPs, Haplotypes,
-Principal Components), and a suite of GS modeling algorithms, making it
-a comprehensive tool for breeders and researchers.
+The pipeline supports multiple genomic marker types (SNPs, haplotypes, and principal components) and a comprehensive suite of GS modeling algorithms, making it an all-in-one solution for breeders and researchers.
 
-A tutorial for the pipeline is provided in the file <a href="doc/MultiGS-R_v1.0_tutorial.pdf">MultiGS-R_v1.0_tutorial.pdf</a>
+A detailed tutorial is available in the file <a href="doc/MultiGS-R_v1.0_tutorial.pdf">MultiGS-R_v1.0_tutorial.pdf</a>
 
 ## Table of Contents
 
@@ -21,6 +15,7 @@ A tutorial for the pipeline is provided in the file <a href="doc/MultiGS-R_v1.0_
 3.  System Requirements & Installation
     -   Prerequisites
     -   Installing R Libraries
+    -   Installing rtm-gwas-snpldb tool
     -   Obtaining OmniGS-R
 4.  Quick Start
 5.  Configuration File
@@ -37,13 +32,7 @@ A tutorial for the pipeline is provided in the file <a href="doc/MultiGS-R_v1.0_
 
 ## Introduction
 
-Genomic Selection accelerates genetic improvement by predicting the
-breeding values of individuals based on their genomic markers. OmniGS-R
-automates the complex workflow of GS, which includes data preprocessing,
-quality control, imputation, model training, and validation. By
-leveraging the robust statistical capabilities of R within a managed
-Java pipeline, OmniGS-R ensures reproducibility, scalability, and ease
-of use for both small-scale studies and large breeding populations.
+Genomic Selection accelerates genetic improvement by predicting the genetic-estimated breeding values (GEBVs) of individuals based on their genomic markers. MultiGS-R automates the complex workflow of GS, which includes data preprocessing, quality control, imputation, model training, and validation. By leveraging the robust statistical capabilities of R within a managed Java pipeline, MultiGS-R ensures reproducibility, scalability, and ease of use for both small-scale studies and large breeding populations.
 
 ## Key Features
 
@@ -53,33 +42,28 @@ of use for both small-scale studies and large breeding populations.
 
 -   **Multiple Marker Views:**
 
-    -   **SNP:** Direct use of Single Nucleotide Polymorphisms.
+    -   **SNP:** Direct use of Single Nucleotide Polymorphisms (SNPs).
 
     -   **HAP:** Conversion of SNPs into haplotype blocks using RTM-GWAS
          SNP-LD for potentially capturing epistatic effects.
 
-    -   **PCA:** Use of Principal Components as markers to reduce
+    -   **PC:** Use of Principal Components as markers to reduce
          dimensionality and address multicollinearity.
 
--   **Comprehensive Data Preprocessing:** Includes sample alignment,
-     genotype harmonization, and missing data imputation.
+-   **Comprehensive Data Preprocessing:** Includes sample alignment, genotype harmonization between training and test lines, and missing data imputation.
 
 -   **Diverse GS Modeling Methods:** Integrates several state-of-the-art
      models via R packages:
+    
+    -  **Linear Models:** Ridge-Regression BLUP (RR-BLUP) via rrBLUP and Genomic Best Linear Unbiased Predictio (GBLUP) via BGLR.
 
-    -   **Bayesian Approaches:** BL (Bayesian LASSO), BRR (Bayesian
-         Ridge Regression), BayesA, BayesB, BayesC via BGLR.
+    -  **Kernel Methods:** Reproducing Kernel Hilbert Spaces (RKHS).
 
-    -   **Machine Learning:** Random Forest for Regression (RFR) and
-         Classification (RFC), Support Vector Regression (SVR) and
-         Classification (SVC).
+    -  **System RBayesian Approaches:** BL (Bayesian LASSO), BRR (Bayesian Ridge Regression), BayesA, BayesB, BayesC via BGLR.
 
-    -   **Linear Models:** Ridge-Regression BLUP (RR-BLUP) via rrBLUP.
-
-    -   **Kernel Methods:** Genomic BLUP (GBLUP) and Reproducing Kernel
-         Hilbert Spaces (RKHS).
-
-## System Requirements & Installation
+    -  **Machine Learning:** Random Forest for Regression (RFR) and Classification (RFC), Support Vector Regression (SVR) and Classification (SVC).
+    
+## Requirements & Installation
 
 ### Prerequisites
 
@@ -95,61 +79,39 @@ of use for both small-scale studies and large breeding populations.
 
 ### Installing R Libraries
 
-Before running OmniGS-R, you must install the required R packages. Start
-an R session and run the following commands:
+Before running MultiGS-R, you must install the required R packages. Start an R session and run the following commands:
 ```bash
 r
 ```
 ```r
 # Install required packages from CRAN
-install.packages(c("rrBLUP", "BGLR", "randomForest", "e1071","ade4", "sommer", "ggplot2", "G2P"))
+install.packages(c("rrBLUP", "BGLR", "randomForest", "e1071","ade4", "sommer", "ggplot2"))
 ```
-If G2P is not available on CRAN, please download from GitHub and follow
-installation instruction:
+An additional G2P package needs to be installed through source file. Please download it from GitHub and follow installation instruction:
 <https://github.com/cma2015/G2P>
 
 ### 
 
 ### Installing rtm-gwas-snpldb tool
 
-The rtm-gwas-snpldb tool for haplotype block identification can be
+The latest executable rtm-gwas-snpldb tool for haplotype block identification can be
 downloaded from: <https://github.com/njau-sri/rtm-gwas>
 
-For convenience, the executable Linux version of rtm-gwas-snpldb is already included in the pipeline folder.
 
-### Obtaining OmniGS-R and its dependencies
+### Obtaining MultiGS-R
 
-Download the latest release of the OmniGS-R repository from https://github.com/AAFC-ORDC-Crop-Bioinfomatics/OmniGS-R.
-All required tools and dependencies are included in the pipeline folder of the repository.
+Download the latest release of the MultiGS-R repository from https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R.
 
 `git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R`
 
 ## Quick Start
 
-We have included an example folder containing all the necessary files to help you quickly test the program. This example allows you to verify that all required tools and libraries are installed correctly and also serves as a set of template files for running your own analyses.
-
-More details about the configuration file, input, and output will be provided in the following sections.
-
--  Clone the repository
+-  **Prepare your data:** Have your VCF marker files and phenotypic data files ready.
+-  **Create a configuration file:** Copy the sample below and modify the paths to match your system and data.
+-  **Run the pipeline:** 
 ```bash
-git clone https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R
+java -jar MultiGS-R_1.0.jar /path/to/your/config.ini
 ```
-
--  Navigate to the example folder
-```bash
-cd MultiGS-R/example
-```
-
-- Modify the configuration file
-  
-Open gs_parameters_example_CV.config and update the `RScriptPath` field to point to your local Rscript executable.
-
--  Run the example
-```bash
-./MultiGS-R_run_example_CV.sh
-```
-If the correct version of Java and all required R libraries are installed, the program will execute success-fully and generate the example results.
-
 
 ## 
 
@@ -161,11 +123,9 @@ INI-style format.
 ### Sample Configuration
 
 ```
-# This is a configuration file for OmniGS-R pipeline.
+# This is a configuration file for MultiGS-R pipeline.
 [Tools]
-# installation folder (absolute path) of the GSPipeline
-pipeline_home = /home/user/MultiGS-R
-# haplotype block identification tool (included with MultiGS-R)
+# Haplotype block identification tool 
 rtm_gwas_snpldb_path = /home/user/OmniGS-R/rtm_gwas/rtm-gwas-snpldb
 # R path
 RScriptPath = /usr/bin/Rscript
@@ -231,9 +191,8 @@ burnIn = 2000
 
   ---------------------------------------------------------------------------------------------------------------------------------
  | Section              | Parameter               | Description                                       | Values                     |
- |----------------------|-------------------------|---------------------------------------------------|----------------------------|
- | **Tools**            | pipeline_home           | Absolute path to OmniGS-R installation directory  | File path                  |
- |                      | rtm_gwas_snpldb_path    | Path to haplotype block identification tool       | File path                  | 
+ |----------------------|-------------------------|---------------------------------------------------|----------------------------|           
+ | **Tools**            | rtm_gwas_snpldb_path    | Path to haplotype block identification tool       | File path                  | 
  |                      | RScriptPath             | Path to RScript executable                        | File path                  |
  | **General**          | pca_variance_explained  | Variance cutoff for PCA component selection       | 0.0-1.0 (e.g., 0.95)       |
  |                      | result_folder           | Output directory for results                      | Directory path             | 
