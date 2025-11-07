@@ -214,7 +214,7 @@ burnIn = 2000
 
 ### Genotypic Data (Markers)
 
--   **Format:** VCF (Variant Call Format) - can be compressed (.vcf.gz) or uncompressed
+-   **Format:** standard VCF (Variant Call Format) with header - can be compressed (.vcf.gz) or uncompressed
 -   **Requirements:**
     -   For **Cross-Validation:** One VCF file for the training population
     -   For **Prediction:** Two VCF files (training and test)
@@ -245,7 +245,7 @@ automatically.*
 2.  **Run the pipeline:**
 
    ``` bash
-java -jar gspipeline.jar /path/to/your/config.txt
+java -jar MultiGS-R_1.0.jar /path/to/your/config.ini
 ```
 
 3.  **Monitor progress:**
@@ -255,7 +255,7 @@ The pipeline will display progress in the console and write detailed logs to the
 
 ```bash
 
-java -Xmx8g -jar gspipeline.jar config.txt
+java -Xmx8g -jar MiltiGS-R_1.0.jar config.ini
 ```
 
 ## Output
@@ -289,14 +289,13 @@ result_folder/
   Use -Xmx parameter to increase Java heap space  e.g., -Xmx8g for 8GB)
 
 -   **VCF file errors:**
-  Ensure your VCF files are properly formatted and indexed
+  Ensure your VCF files are properly formatted and have necessary header
 
 ## Citation
 
-If you use OmniGS-R in your research, please cite:
+If you use MultiGS-R in your research, please cite:
+    **You FM, Zheng C, Zagariah Daniel JJ, Li P, Jackle K,  House M, Tar’an T, Cloutier S.** Genomic selection for seed yield prediction achieved through versatile pipelines for breeding efficiency in Flax. (In preparation).
 
- **OmniGS-R: A Comprehensive Genomic Selection Pipeline Using R
- Packages.** [Frank You/AAFC-AAC]. Version 1.0. (https://github.com/AAFC-ORDC-Crop-Bioinfomatics/MultiGS-R).
 
 ## License
 
