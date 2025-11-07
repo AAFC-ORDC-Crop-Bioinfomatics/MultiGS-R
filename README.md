@@ -1,4 +1,4 @@
-# MultiGS-R (v1.0)
+# MultiGS-R
 
 ## Java Pipeline for Genomic Selection of Multiple Single Traits Using R-Based Models and Diverse Marker Types
 
