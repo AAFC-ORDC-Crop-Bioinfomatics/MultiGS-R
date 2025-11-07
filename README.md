@@ -1,4 +1,4 @@
-# MultiGS-R (v1.0)
+# MultiGS-R
 
 ## Java Pipeline for Genomic Selection of Multiple Single Traits Using R-Based Models and Diverse Marker Types
 
@@ -10,25 +10,25 @@ A detailed tutorial is available in the file <a href="doc/MultiGS-R_v1.0_tutoria
 
 ## Table of Contents
 
-1.  Introduction
-2.  Key Features
-3.  System Requirements & Installation
-    -   Prerequisites
-    -   Installing R Libraries
-    -   Installing rtm-gwas-snpldb tool
-    -   Obtaining OmniGS-R
-4.  Quick Start
-5.  Configuration File
-    -   Sample Configuration
-    -   Parameter Details
-6.  Input Files
-    -   Genotypic Data (Markers)
-    -   Phenotypic Data
-7.  Usage
-8.  Output
-9.  Troubleshooting
-10. Citation
-11. License
+1. [Introduction](#introduction)
+2. [Key Features](#key-features)
+3. [System Requirements & Installation](#system-requirements--installation)
+    - [Prerequisites](#prerequisites)
+    - [Installing R Libraries](#installing-r-libraries)
+    - [Installing rtm-gwas-snpldb tool](#installing-rtm-gwas-snpldb-tool)
+    - [Obtaining MultiGS-R](#obtaining-multigs-r)
+4. [Quick Start](#quick-start)
+5. [Configuration File](#configuration-file)
+    - [Sample Configuration](#sample-configuration)
+    - [Parameter Details](#parameter-details)
+6. [Input Files](#input-files)
+    - [Genotypic Data (Markers)](#genotypic-data-markers)
+    - [Phenotypic Data](#phenotypic-data)
+7. [Usage](#usage)
+8. [Output](#output)
+9. [Troubleshooting](#troubleshooting)
+10. [Citation](#citation)
+11. [License](#license)
 
 ## Introduction
 
